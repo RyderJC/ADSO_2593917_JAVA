@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@mipmap/titulo_pokemon"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_pokemon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:text="ANTERIOR"
+            android:background="@drawable/button_backgraund"
+            android:backgroundTint="#BA0909"
+            android:paddingHorizontal="50dp"
+            android:onClick="previousListPokemons"
+            />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:text="SIGUIENTE"
+            android:background="@drawable/button_backgraund"
+            android:backgroundTint="#0E3F7C"
+            android:paddingHorizontal="50dp"
+            android:onClick="nextListstPokemons"
+            />
+    </LinearLayout>
+
+</LinearLayout>
